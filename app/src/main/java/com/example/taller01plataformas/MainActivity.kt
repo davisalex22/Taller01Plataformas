@@ -11,10 +11,12 @@ class MainActivity : AppCompatActivity() {
         //Pregunta 1: Validar si una persona es mayor o menor de edad
         validarEdad(21)
 
-        //Pregunta 2: Presentar una tabla de multiplicar de n numero de forma ascendente y descendente
+        //Pregunta 2: Presentar una tabla de multiplicar de n numero de forma ascendente
+        // y descendente
         tablaMultiplicar(5)
 
-        //Pregunta 3: Mostrar listado de paralelo de la materia de Plataformas Moviles y los subgrupos por proyectos(mostrar resultados ordenados)
+        //Pregunta 3: Mostrar listado de paralelo de la materia de Plataformas Moviles y los
+        // subgrupos por proyectos(mostrar resultados ordenados)
         listadoParalelo()
 
         //Pregunta 4: Propiedades las propiedades de un vehiculo utilizando clases
@@ -45,13 +47,13 @@ class MainActivity : AppCompatActivity() {
             var r = num * i
             listado.add(r)
         }
-        println("Orden ascendente: " + listado + "\n")
+        println("Orden ascendente: $listado\n")
         /*
         sortedDescending() hace exactamente lo mismo que sorted(), solo que con un orden
         descendente en los elementos
          */
         listado.sortDescending()
-        println("Orden descendente: " + listado + "\n")
+        println("Orden descendente: $listado\n")
     }
 
     private fun listadoParalelo() {
